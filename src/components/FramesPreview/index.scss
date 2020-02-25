@@ -1,0 +1,47 @@
+.preview-tools {
+  width: 384px;
+  display: flex;
+  align-self: flex-start;
+  .frames-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #282828;
+    .preview-canvas {
+      height: 384px;
+      width: 384px;
+      box-shadow: 0 0 5px white;
+    }
+    &:fullscreen {
+      justify-content: space-around;
+      flex-direction: row;
+      .preview-canvas {
+        transform: scale(2);
+      }
+    }
+    .preview-setings {
+      height: 30px;
+      width: 384px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #333333;
+      color: white;
+      font-size: 18px;
+      .fps-input {
+        width: 150px;
+        background-color: #4c4c4c;
+      }
+      .fps-count {
+        width: 70px;
+        text-align: center;
+      }
+      .full-screen-button {
+        height: 30px;
+        width: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.settings{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 420px;
+  position: absolute;
+  top: 50%;
+  right: -202px;
+  border-radius: 7px;
+  transition: .7s;
+  background-color: #444444;
+  transition-timing-function: cubic-bezier(.18,1.01,.83,1.01);
+
+  &.activeMenu{
+    right: 0;
+  }
+
+  .exit-menu-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-bottom-left-radius: 7px;
+    background-color: #ffd700;
+    font-size: 23px;
+
+    &:hover{
+      background: white;
+    }
+  }
+
+  .settings-area{
+    width: 130px;
+    height: 380px;
+    border: 1px solid #ffd700;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    color: white;
+
+    .import-button{
+      width: 75px;
+      height: 45px;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+      background: #ffd700;
+      color: black;
+
+      &:hover{
+        background: white;
+      }
+
+      .import-input{
+        display: none;
+      }
+
+    }
+
+    .settings-button{
+      width: 75px;
+      height: 35px;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+      background: #ffd700;
+      color: black;
+
+      &:hover{
+        background: white;
+      }
+    }
+  }
+
+  .buttons-container{
+    width: 50px;
+    height: 261px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -50px;
+
+    .settings-button{
+      width: 50px;
+      height: 50px;
+      margin-bottom: 2px;
+      background-color: #3a3a3a;
+      color: white;
+      font-size: 25px;
+      padding-right: 2px;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 12px;
+
+      &:hover{
+        background-color: #4f4f4f;
+      }
+
+      &.active{
+        border-right: 2px solid #ffd700;
+      }
+    }
+  }
+}
+
+
+.export-field{
+  height: 60px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+
+
+.export-button{
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #ffd700;
+}
+
+.nameInput{
+  background-color:  #444444;
+  color: white;
+  font-size: 13px;
+  border: 1px solid white;
+  width: 80px;
+  height: 30px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.range-input{
+  width: 80px;
+}
+
+.color-button{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+
+  .color-input{
+    display: none;
+  }
+}

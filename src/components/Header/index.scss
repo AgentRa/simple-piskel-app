@@ -1,0 +1,81 @@
+.app-header {
+  width: 100vw;
+  height: 6vh;
+  background-color: #2d2d2d;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  overflow: hidden;
+  .piskel-button {
+    background-color: #2d2d2d;
+    h1 {
+      color: white;
+      font-family: "PixelFont";
+      letter-spacing: 4px;
+      user-select: none;
+      &:hover {
+        color: #ffd700;
+      }
+    }
+  }
+  .header-buttons-container {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .create-sprite-button {
+      width: 150px;
+      height: 30px;
+      background-color: #ffd700;
+      border-radius: 5px;
+      font-size: 15px;
+      font-weight: 600;
+      &:hover {
+        background-color: white;
+      }
+    }
+    .login-button {
+      width: 100px;
+      height: 30px;
+      background-color: #ffd700;
+      border-radius: 5px;
+      font-size: 15px;
+      font-weight: 600;
+      &:hover {
+        background-color: white;
+      }
+    }
+    .logout-container {
+      width: 200px;
+      height: 100%;
+      display: flex;
+      justify-self: end;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: 19px;
+      color: white;
+      .logout-button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 140px;
+        height: 100%;
+        .logout-button {
+          width: 130px;
+          height: 25px;
+          background-color: #ffd700;
+          border-radius: 5px;
+          font-size: 15px;
+          font-weight: 600;
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}

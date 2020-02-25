@@ -1,0 +1,98 @@
+.frames-control {
+  width: 242px;
+  max-height: 800px;
+  align-self: flex-start;
+  overflow: auto;
+  .frame {
+    width: 192px;
+    height: 192px;
+    border-radius: 3px;
+    border: 3px solid #444444;
+    margin-bottom: 10px;
+    background-size: cover;
+    position: relative;
+    &:hover {
+      border: 3px solid #848484;
+      .frame-delete,
+      .frame-copy {
+        display: block;
+      }
+    }
+    &.active {
+      border: 3px solid #ffd700;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        right: -23px;
+        top: 43%;
+        border: 10px solid transparent;
+        border-left: 10px solid #ffd700;
+      }
+    }
+    &.drag-hovered {
+      border: dashed 3px #ffd700;
+    }
+    .frame-count {
+      width: 30px;
+      height: 30px;
+      background-color: #ffd700;
+      border-bottom-right-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .frame-copy {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 18px;
+      color: white;
+      background-color: gray;
+      display: none;
+    }
+    .frame-delete {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 18px;
+      color: white;
+      background-color: gray;
+      display: none;
+    }
+  }
+  .add-frame-button {
+    width: 195px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 3px solid #848484;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 16px;
+    svg {
+      font-size: 25px;
+      margin-right: 10px;
+    }
+    &:hover {
+      border: 3px solid #ffd700
+    }
+  }
+}
